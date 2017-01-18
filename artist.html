@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!--
+Name: Tariq Darwish
+Date: January 18,2017
+Class.Section: CGS1821.051
+Assignment: Exercise1
+Language: HTML5
+Purpose: Demonstrate knowledge of tables
+Includes: Bootstrap, background image, artist image, favicon, and one css page.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Clams Casino</title>
+
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine">
+		<link rel="stylesheet" href="css/artist.css">
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+  <!--Starting off with a jumbotron to help format the background and everything I will put inside of it-->
+  <div class="jumbotron" id="box-wrapper">
+    <div class="container">
+
+<!--Separating everything into rows helps control certain aspects of the page better.-->
+      <div class="row">
+        <div id="header" class="col-lg-12 col-md-12 col-sm-12">
+          <h1>Clams Casino</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div id="artist-image" class="img-circle">
+          <img src="images/artist.jpg" alt="Clams Casino" class="img-responsive center-block img-circle">
+        </div>
+      </div>
+      <br>
+      <!--Using bootstrap really helps create a responsive table but I still wrap it in a div just in case i want to manipulate the entire table across the page-->
+      <div class="row">
+        <div id="artist-work">
+          <table class="table table-bordered table-hover table-repsonsive">
+            <thead>
+              <tr>
+                <th>Works</th>
+                <th>Release Date</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Cold Feet by Mac Miller</td>
+                <td>2011</td>
+                <td>Producer</td>
+              </tr>
+              <tr>
+                <td>Blast</td>
+                <td>2016</td>
+                <td>From album 32 Levels</td>
+              </tr>
+              <tr>
+                <td>Wassup by A$AP Rocky</td>
+                <td>2011</td>
+                <td>Producer</td>
+              </tr>
+              <tr>
+                <td>I'm God</td>
+                <td>2012</td>
+                <td>From album Instrumentals 2</td>
+              </tr>
+              <tr>
+                <td>The Fall by The Weekend</td>
+                <td>2011</td>
+                <td>Producer</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td>&copy; Table Created by Tariq Darwish. </td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </div>
+<!--Here we are exiting the boxwrapper background image and putting the a new container below it. This not only looks better aesthetically, it also helps maintain the responsiveness a lot smoother.
+    if we were to stretch the height of the background image, the transition to mobile wouldn't look so great-->
+  <div class="container">
+    <div class="row row-centered">
+      <div id="paragraph1" >
+        <p>ClamsCasino, real name Michael Volpe, is an American Hip Hop musician, record producer, and songwriter.
+            Based in Nutley, New Jersey, he has produced tracks for artists such as A$Ap Rocky, Lil B, Vince Staples,
+            and Mac Miller. He also has remixed works by Big K.R.I.T., Washed Out, and Lana Del Rey. Clams Casino's debut EP
+            Rainforest was released in 2011. His Instrumentals mixtape was also released in March of the same year. Followed by the release of
+            Instrumentals 2 in 2012 and Instrumentals 3 in 2013. The mixtapes were distrubuted for free through his <a href="http://clammyclams.com/">website</a>.
+            <!--This paragraph text is from clammyclams.com  -->
+        </p>
+      </div>
+      <div id="paragraph2" >
+        <p>
+          On 32 Levels, Clams approaches the question from two different angles. On the A side, we hear him staying in his lane and refining his craft,
+          cutting back on samples in favor of instrumental recordings, denser arrangements and tighter compositions. On the B side, Clams looks beyond his
+          comfort zone, pushing toward mainstream pop with mixed results. Versatility, it turns out, may not be Clams’ strong suit, though that’s hardly a problem;
+          as the first half of 32 Levels demonstrates, there’s still plenty of room left for Clams Casino to grow into his own sound. The biggest question that he now
+          faces is what distinguishes him as an artist—not just from the "cloud rap” beatmakers who followed in his footsteps, but from big-name producers like Noah “40”
+          Shebib and Metro Boomin who mine similar terrain.
+          <!--This paragraph text is from an article on pitchfork http://pitchfork.com/reviews/albums/22101-32-levels/  -->
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

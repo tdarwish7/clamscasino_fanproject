@@ -1,0 +1,62 @@
+/*Name: Tariq Darwish
+Date: January 18,2017
+Class.Section: CGS1821.051
+Assignment: Exercise1
+Language: CSS
+Purpose: Demonstrate knowledge of tables
+Includes: Bootstrap, background image, artist image, favicon, and one css page.
+*/
+
+
+/*Box Wrapper Jumbotron styling*/
+#box-wrapper {
+	background-image: url("../images/background.jpg")  ;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	min-height: 800px;
+}
+
+
+/* styling for the h1 header*/
+#header h1 {
+	font-family: Tangerine, sans-serif ;
+	text-align:center;
+	font-weight: bold;
+}
+
+/*styling for for the image in the artist image div*/
+#artist-image img{
+	border: 2px solid black;
+}
+
+
+/*styling for the table text*/
+#artist-work table {
+	color: #f9f9f7;
+	font-family: Tangerine, sans-serif;
+	font-size: 1.5em;
+}
+
+/*style for the table body so user can see text better when hovered over*/
+#artist-work table tbody tr:hover{
+	color: black;
+}
+
+/*text styling for the first paragraph*/
+#paragraph1 p {
+	text-align: center;
+}
+
+/*styling for the paragraph link*/
+#paragraph1 p a {
+	text-decoration: none;
+}
+
+/*styling for the alignment of text in the second paragraph*/
+#paragraph2 p {
+	text-align: center;
+}
