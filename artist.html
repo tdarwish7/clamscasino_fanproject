@@ -20,7 +20,8 @@ Includes: Bootstrap, background image, artist image, favicon, and one css page.
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine">
-		<link rel="stylesheet" href="css/artist.css">
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="css/artist.css">
 
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -38,21 +39,21 @@ Includes: Bootstrap, background image, artist image, favicon, and one css page.
 
 <!--Separating everything into rows helps control certain aspects of the page better.-->
       <div class="row">
-        <div id="header" class="col-lg-12 col-md-12 col-sm-12">
+        <div id="header" class="col-lg-12 col-md-12 col-sm-12 animated zoomIn">
           <h1>Clams Casino</h1>
         </div>
       </div>
 
       <div class="row">
         <div id="artist-image" class="img-circle">
-          <img src="images/artist.jpg" alt="Clams Casino" class="img-responsive center-block img-circle">
+          <img src="images/artist.jpg" alt="Clams Casino" class="img-responsive center-block img-circle animated zoomIn">
         </div>
       </div>
       <br>
       <!--Using bootstrap really helps create a responsive table but I still wrap it in a div just in case i want to manipulate the entire table across the page-->
       <div class="row">
         <div id="artist-work">
-          <table class="table table-bordered table-hover table-repsonsive">
+          <table class="table table-bordered table-hover table-repsonsive animated zoomIn">
             <thead>
               <tr>
                 <th>Works</th>
